@@ -29,20 +29,16 @@ done
 done
 if(($n==$p))
 then
+echo "The required multiplication is =>"
 for((i=0;i<m;i++)) do
 for((j=0;j<q;j++)) do
 for((k=0;k<n;k++)) do
 m[$i,$j]=$((${m[$i,$j]}+(${m1[$i,$k]}*${m2[$k,$j]})))
 done
-done
-done
-else
-echo "Multiplication is not possible."
-fi
-echo "The required multiplication is =>"
-for((i=0;i<m;i++)) do
-for((j=0;j<q;j++)) do
 echo -n ${m[$i,$j]} " "
 done
 echo
 done
+else
+echo "Multiplication is not possible."
+fi
