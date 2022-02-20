@@ -7,7 +7,3 @@ do
 sum=$((sum+i))
 done
 echo "First " $n "number sum is => " $sum
-for TOKEN in $*
-do
-echo $TOKEN
-done
